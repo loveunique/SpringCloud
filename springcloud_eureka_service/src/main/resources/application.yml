@@ -1,0 +1,14 @@
+#端口号
+server:
+      port: 8989
+
+#项目名称
+spring:
+  application:
+    name: sso-service #使用ribbon时不能用下划线，换成中划线
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+

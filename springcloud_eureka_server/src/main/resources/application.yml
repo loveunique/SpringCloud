@@ -1,0 +1,15 @@
+#端口号
+server:
+      port: 8761
+
+#项目名称
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka
+    register-with-eureka: false
+    fetch-registry: false #设为false，不向自己注册，表示是服务端

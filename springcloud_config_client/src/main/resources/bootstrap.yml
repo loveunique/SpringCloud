@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ConfigClient #对应配置文件规则中的{application}部分
+  cloud:
+    config:
+      uri: http://localhost:8799 #配置中心config-server的地址
+      profile: default #对应配置文件规则中的{profile}部分
+      label: master #对应配置文件规则中的{label}部分
+      discovery:
+        enabled: true #开启通过服务来访问Config Server的功能
+        service-id: config-server #参数来指定Config Server注册的服务名
+
+management:
+  security:
+    enabled: false  #关闭验证
