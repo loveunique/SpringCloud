@@ -12,6 +12,7 @@
         <module>springcloud_feign_client</module>
         <module>springcloud_config_server</module>
         <module>springcloud_config_client</module>
+        <module>springcloud_zuul</module>
     </modules>
     <parent>
             <groupId>org.springframework.boot</groupId>
