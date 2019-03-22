@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeignController {
 
     @Autowired
-    @Qualifier("SSO-SERVICE")
-    AdminService adminService;
+    AdminService adminService;//会提示有多个实现类，忽略
 
     @GetMapping("login/{username}")
     public String login(@PathVariable("username")String username){

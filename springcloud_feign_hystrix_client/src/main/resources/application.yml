@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9004
 
 spring:
   application:
@@ -10,4 +10,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-#feign默认开启断路器
+#feign默认开启断路器,但目前这个版本不会，下面的配置必须写
+feign:
+  hystrix:
+    enabled: true
