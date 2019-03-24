@@ -11,8 +11,8 @@ spring:
           basedir: E:/ProgramData/git/SpringCloudConfig #本地地址
           uri: https://github.com/buyilihao/SpringCloudConfig.git #gitHub地址
           default-label: master #默认为master
-          username: buyilihao
-          password: www.aq5436.com
+          username: 
+          password: 
 
 eureka:
   client:
